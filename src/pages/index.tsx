@@ -1,6 +1,7 @@
 import { Inter } from '@next/font/google'
 import Head from 'next/head'
 import Hero from '@/components/Hero'
+import HeroSection from '@/components/HeroSection'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,7 +15,8 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main>
-        <Hero imageUrl='/img/hero-image.jpg' />
+        {/* <Hero imageUrl='/img/hero-image.jpg' /> */}
+        <HeroSection imageUrl='/img/hero-image.jpg' productName='サーフィンしているぜえ' />
       </main>
     </>
   )
